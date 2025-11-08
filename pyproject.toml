@@ -1,0 +1,14 @@
+[project]
+name = "mcp-server-client"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-google-genai>=3.0.1",
+    "mcp-use>=1.4.0",
+    "mcp[cli]>=1.21.0",
+    "psycopg2>=2.9.11",
+    "psycopg2-binary>=2.9.11",
+    "sqlalchemy>=2.0.44",
+]

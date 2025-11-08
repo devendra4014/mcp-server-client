@@ -63,52 +63,6 @@ GEMINI_API_KEY= "API_KEY"
 uv run client/db_client.py 
 ```
 
-## GitHub Setup
-
-1. Create a new repository on GitHub:
-   - Go to https://github.com
-   - Click on "New repository"
-   - Name your repository `mcp-server-client`
-   - Choose visibility (public or private)
-   - Do not initialize with README, .gitignore, or license as we already have these files
-
-2. Initialize local git repository:
-```bash
-git init
-```
-
-3. Create .gitignore file:
-```bash
-# Create and edit .gitignore
-echo ".env
-__pycache__/
-*.pyc
-.venv/
-.idea/
-.vscode/
-*.log" > .gitignore
-```
-
-4. Add and commit your files:
-```bash
-git add .
-git commit -m "Initial commit: MCP Server with SQL Alchemy and Gemini LLM"
-```
-
-5. Add GitHub repository as remote and push:
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/mcp-server-client.git
-git branch -M main
-git push -u origin main
-```
-
-Note: Replace `YOUR_USERNAME` with your actual GitHub username.
-
-Important Security Reminders:
-- Never commit your `.env` file containing sensitive credentials
-- Make sure `.gitignore` is properly set up before your first commit
-- Keep your Gemini API key and database credentials private
-
 ## Example Interactions
 
 Below are some examples of interactions with the SQL agent:
